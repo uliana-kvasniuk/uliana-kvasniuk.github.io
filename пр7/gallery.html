@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalise.css">
+    <title>Практична Робота 7</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Main Header - Our Site</h1>
+        <h2>Sub Header - Topic of the Site</h2>
+    </header>
+
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            border: 1px dashed white;
+            background-color: #ff5599;
+            height: 200px;
+        }
+    
+        .container li {
+            flex-grow: 1;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            margin-right: 8px;
+            background-color: #ff5555;
+            list-style-type: none;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .img{
+            width: 200px;
+        }
+
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: right;
+        }
+
+        .photo-row {
+            display: flex;
+            justify-content: center; 
+            gap: 10px; 
+            margin: 20px auto;
+        }
+        .photo-row img {
+            width: 18%; 
+        }
+
+    </style>
+    
+    <div class="photo-row">
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+    </div>
+
+    <div class="photo-row">
+        <img src="1.jpg" alt="Фотографія 1">
+        <img src="2.jpg" alt="Фотографія 2">
+        <img src="3.jpg" alt="Фотографія 3">
+        <img src="4.jpg" alt="Фотографія 4">
+        <img src="5.jpg" alt="Фотографія 5">
+    </div>
+
+    <div class="content">
+        <img src="1.jpg" alt="Зображення" class="left" width="200">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero sit amet dui. Phasellus tempus porttitor dolor id feugiat. 
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero sit amet dui. Phasellus tempus porttitor dolor id feugiat. 
+    </p>
+
+    <img src="2.jpg" class="img right">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero sit amet dui. Phasellus tempus porttitor dolor id feugiat. 
+    </p>
+
+    <img src="3.jpg" class="img left">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero sit amet dui. Phasellus tempus porttitor dolor id feugiat. 
+    </p>
+
+    <img src="4.jpg" class="img right">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero sit amet dui. Phasellus tempus porttitor dolor id feugiat. 
+    </p>
+
+    <img src="5.jpg" class="img left">
+
+
+    </body>
+
+</html>

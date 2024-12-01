@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична Робота 7</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            border: 1px dashed white;
+            background-color: #ff5599;
+            height: 200px;
+        }
+
+        .container li {
+            flex-grow: 1;
+            margin: 5px 8px 2px;
+            background-color: #ff5555;
+            list-style-type: none;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .inline-img {
+            width: 250px;
+            display: inline-block;
+            border-radius: 15px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .photo-gallery {
+            text-align: center;
+        }
+
+        .photo-gallery img {
+            width: 250px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Main Header - Our Site</h1>
+        <h2>Sub Header - Topic of the Site</h2>
+    </header>
+
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="photo-gallery">
+        <div class="inline-img">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+
+        <div class="inline-img">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="1.jpg" alt="Зображення" class="left" width="200">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci
+            vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero
+            sit amet dui.
+        </p>
+        <img src="2.jpg" alt="Зображення" class="right" width="200">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu varius felis. Nunc fermentum commodo orci
+            vel convallis. Vivamus pretium, orci a molestie feugiat, sapien velit rutrum dui, ac iaculis nulla libero
+            sit amet dui.
+        </p>
+    </div>
+</body>
+
+</html>
